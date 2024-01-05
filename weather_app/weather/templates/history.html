@@ -1,0 +1,10 @@
+{% include "header.html" %}
+
+  <h2>Search History</h2>
+  <ul>
+    {% for entry in history %}
+      <li>{{ entry.city }} - {{ entry.timestamp }} - {{ entry.temperature }}°C - {{ entry.conditions }} - {{ entry.forecast }}</li>
+    {% endfor %}
+  </ul>
+  {% include "footer.html" %}
+

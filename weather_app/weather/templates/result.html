@@ -1,0 +1,8 @@
+{% include "header.html" %}
+
+  <h2>Weather Result</h2>
+  <p>Temperature: {{ weather_data.Temperature.Metric.Value }}°C</p>
+  <p>Conditions: {{ weather_data.WeatherText }}</p>
+  <p>Forecast: {{ weather_data.IconPhrase }}</p>
+{% include "footer.html" %}
+

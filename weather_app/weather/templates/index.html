@@ -1,0 +1,8 @@
+{% include "header.html" %}
+  <h2>Search Weather</h2>
+  <form method="post" action="{% url 'search_weather' %}">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Search</button>
+  </form>
+  {% include "footer.html" %}
